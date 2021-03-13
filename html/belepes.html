@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Belépés - Kerékpár webshop</title>
+	<link href="../css/belepes.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="#" alt="Az oldal címe/logója"/>
-            </div>
-            <div>
-                <button>Fiók</button>
-                <button>Kosár</button>
-            </div>
+    <header >
+       <div class="row">
+                <div class="column" style="flex: 10%;">
+                    <img class="logo" style="text-align:center;" src="../img/logo.jpg" alt="Az oldal címe/logója"/>
+                </div>
+                <div class="column" style="flex: 80%;">
+                    <h1>BIKESHOP</h1>
+                </div> 
+                <div class="column" style="flex: 10%;" >
+                    
+                        <button class="headerbutton">Kosár</button>
+                        <button class="headerbutton">Fiók</button>
+                </div>
+
         </div>
+        
     </header>
-    <nav>
+    <nav style="text-align: left;">
         <p>menu</p>
     </nav>
     <main>
-        <div>
-            <form action="belepes.html" method="post" enctype="multipart/form-data" autocomplete="off">
-                <label><input type="text" placeholder="Felhasználónév" name="fnev"></label><br>
-                <label><input type="password" placeholder="Jelszó" name="jelszo"></label><br>
-                <label><input type="submit" name="submit" value="Bejelentkezés"></label><br>
-                <label><button>Regisztráció</button></label><br>
+        <div class="loginpage">
+            <form  action="belepes.html" method="post" enctype="multipart/form-data" autocomplete="off">
+                <label><input class="inputbox" type="text" placeholder="Felhasználónév" name="fnev"></label><br>
+                <label><input class="inputbox" type="password" placeholder="Jelszó" name="jelszo"></label><br>
+                <label><input class="headerbutton" type="submit" name="submit" value="Bejelentkezés"></label><br>
+                <label><button class="headerbutton">Regisztráció</button></label><br>
             </form>
         </div>
     </main>
