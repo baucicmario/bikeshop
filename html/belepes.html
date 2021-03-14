@@ -7,25 +7,30 @@
 </head>
 <body>
     <header >
-       <div class="row">
-                <div class="column" style="flex: 10%;">
-                    <img class="logo" style="text-align:center;" src="../img/logo.jpg" alt="Az oldal címe/logója"/>
-                </div>
-                <div class="column" style="flex: 80%;">
-                    <h1>BIKESHOP</h1>
-                </div> 
-                <div class="column" style="flex: 10%;" >
-                    
-                        <button class="headerbutton">Kosár</button>
-                        <button class="headerbutton">Fiók</button>
-                </div>
-
-        </div>
-        
+        <table>
+            <tr>
+                <th style="text-align: left;"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></th>
+                <th style="text-align: left;"></thstyle> <h1>BIKESHOP</h1></th>
+                <th style="text-align: right;">  <button class="headerbutton">Kosár</button>
+                    <button class="headerbutton">Fiók</button></th>
+            </tr>
+        </table>
     </header>
-    <nav style="text-align: left;">
-        <p>menu</p>
-    </nav>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Menu 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fooldal.html">fooldal</a>
+            <a href="belepes.html">Belepes</a>
+            <a href="ferfi.html">Férfi biciklik</a>
+            <a href="no.html">Női biciklik</a>
+            <a href="gyerek.html">gyerek biciklik</a>
+            <a href="regisztracio.html">regisztracio</a>
+          </div>
+        </div> 
+      </div>
     <main>
         <div class="loginpage">
             <form  action="belepes.html" method="post" enctype="multipart/form-data" autocomplete="off">
@@ -37,7 +42,7 @@
         </div>
     </main>
     <footer>
-        <div>
+        <div class="footer">
             <p>Lábrészbe való adatok</p>
         </div>
     </footer>

@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Regisztráció - Kerékpár webshop</title>
+    <link href="../css/regisztracio.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <div>
-                <img src="#" alt="Az oldal címe/logója"/>
-            </div>
-            <div>
-                <button>Fiók</button>
-                <button>Kosár</button>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <th style="text-align: left;"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></th>
+                <th style="text-align: left;"></thstyle> <h1>BIKESHOP</h1></th>
+                <th style="text-align: right;">  <button class="headerbutton">Kosár</button>
+                    <button class="headerbutton">Fiók</button></th>
+            </tr>
+        </table>
     </header>
-    <nav>
-        <p>menu</p>
-    </nav>
+    <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn">Menu 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="fooldal.html">fooldal</a>
+            <a href="belepes.html">Belepes</a>
+            <a href="ferfi.html">Férfi biciklik</a>
+            <a href="no.html">Női biciklik</a>
+            <a href="gyerek.html">gyerek biciklik</a>
+        <a href="regisztracio.html">regisztracio</a>
+          </div>
+        </div> 
+      </div>
     <main>
-        <div>
+        <div class="loginpage">
             <form action="regisztracio.html" method="post" enctype="multipart/form-data" autocomplete="off">
-                <label><input type="email" name="email" placeholder="email@email.hu"></label><br>
-                <label><input type="text" name="fnev" placeholder="Felhasználónév"></label><br>
-                <label><input type="text" name="fname" placeholder="Vezetéknév"></label>
-                <label><input type="text" name="lname" placeholder="Keresztnév"></label><br>
-                <label><input type="password" name="jelszo" placeholder="Jelszó"></label><br>
-                <label><input type="submit" name="regisztracio" value="Regisztráció"></label>
+                <label><input class="inputbox" type="email" name="email" placeholder="email@email.hu"></label><br>
+                <label><input class="inputbox" type="text" name="fnev" placeholder="Felhasználónév"></label><br>
+                <label><input class="inputbox" type="text" name="fname" placeholder="Vezetéknév"></label>
+                <label><input class="inputbox" type="text" name="lname" placeholder="Keresztnév"></label><br>
+                <label><input class="inputbox" type="password" name="jelszo" placeholder="Jelszó"></label><br>
+                <label><input class="headerbutton" type="submit" name="regisztracio" value="Regisztráció"></label>
             </form>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="footer">
             <p>Lábrészbe való adatok</p>
         </div>
     </footer>
