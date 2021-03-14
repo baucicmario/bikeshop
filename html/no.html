@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Női kerékpár - Kerékpár webshop</title>
+    <link href="../css/headerfooter.css" rel="stylesheet">
     <link href="../css/no.css" rel="stylesheet">
 </head>
 <body>
@@ -11,8 +12,8 @@
             <tr>
                 <th style="text-align: left;"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></th>
                 <th style="text-align: center;"></thstyle> <h1>BIKESHOP</h1></th>
-                <th style="text-align: right;">  <button class="headerbutton">Kosár</button>
-                    <button class="headerbutton">Fiók</button></th>
+                <th style="text-align: right;">  <button onclick="window.location.href='kosar.html'"class="headerbutton">Kosár</button>
+                    <button class="headerbutton" onclick="window.location.href='kosar.html'">Fiók</button></th>
             </tr>
         </table>
     </header>
@@ -22,12 +23,12 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="fooldal.html">fooldal</a>
+            <a href="fooldal.html">Fooldal</a>
             <a href="belepes.html">Belepes</a>
             <a href="ferfi.html">Férfi biciklik</a>
             <a href="no.html">Női biciklik</a>
-            <a href="gyerek.html">gyerek biciklik</a>
-            <a href="regisztracio.html">regisztracio</a>
+            <a href="gyerek.html">Gyerek biciklik</a>
+        <a href="regisztracio.html">Regisztracio</a>
           </div>
         </div> 
       </div>
@@ -50,34 +51,44 @@
             </section>
         </div>
         <div>
-            <ul>
-                <li>
-                    <div>
-                        <h3>KERÉKMÉRET</h3>
-                    </div>
-                    <div>
-                        <form action="no.html" method="get" enctype="multipart/form-data" autocomplete="off">
-                            <label><input type="checkbox" name="f26">26"</label><br>
-                            <label><input type="checkbox" name="f27,5">27,5"</label><br>
-                            <label><input type="checkbox" name="f29">29"</label><br>
-
-                        </form>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>TÍPUS</h3>
-                    </div>
-                    <div>
-                        <form action="no.html" method="get" enctype="multipart/form-data" autocomplete="off">
-                            <label><input type="checkbox" name="nMTB">MTB KERÉKPÁR</label><br>
-                            <label><input type="checkbox" name="nvarosi">VÁROSI KERÉKPÁR</label><br>
-                            <label><input type="checkbox" name="nfittnes">FITNESS KERÉKPÁR</label><br>
-                            <label><input type="checkbox" name="ncrusier">CRUISER KERÉKPÁR</label><br>
-                        </form>
-                    </div>
-                </li>
-            </ul>
+            <table class="logpage">
+                <tr>
+                    <th style="background-color: #252D30; border-radius: 30px;">
+                        <ul>
+                            <li >
+                                <div>
+                                    <h3 style="color: white;">KERÉKMÉRET</h3>
+                                </div>
+                                <div>
+                                    <form action="ferfi.html" method="get" enctype="multipart/form-data" autocomplete="off">
+                                        <label class="container"><input type="checkbox" name="n26">26" <span class="checkmark"></span></label><br>
+                                        <label class="container"><input type="checkbox" name="n27,5">27,5"<span class="checkmark"></span></label><br>
+                                        <label class="container"><input type="checkbox" name="n29">29"<span class="checkmark"></span></label><br>
+            
+                                    </form>
+                                </div>
+                            </li>
+                            <li >
+                                <div>
+                                    <h2 style="color: white;" >TÍPUS</h2>
+                                </div>
+                                <div>
+                                    <form action="ferfi.html" method="get" enctype="multipart/form-data" autocomplete="off">
+                                        <label class="container"><input type="checkbox" name="nMTB">MTB KERÉKPÁR<span class="checkmark"></span></label><br>
+                                        <label class="container"><input type="checkbox" name="nvarosi">VÁROSI KERÉKPÁR<span class="checkmark"></span></label><br>
+                                        <label class="container"><input type="checkbox" name="norszag">ORSZÁGÚTI KERÉKPÁR<span class="checkmark"></span></label><br>
+                                        <label class="container"><input type="checkbox" name="ncrusier">CRUISER KERÉKPÁR<span class="checkmark"></span></label><br>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </th>
+                    <th style="width: 75%; background-color: #EBECEE; border-radius: 30px;">
+                        biciklik
+                    </th>
+                </tr>
+        
+            </table>
         </div>
     </main>
     <footer>
