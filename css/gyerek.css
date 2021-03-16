@@ -17,9 +17,9 @@ body {
 }
 
 header {
- 
-  background-color: #3E4750;
 
+  background-color: #3E4750;
+  position: relative;
   justify-content: space-between;
   flex-direction: column;
   display: flex;
@@ -145,7 +145,7 @@ h1{
 .footer {
   margin-left: 8%;
   margin-right: 8%;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 84%;
@@ -153,3 +153,238 @@ h1{
   color: white;
   text-align: center;
 }
+
+.footer h2 {
+  padding-top: 20px;
+}
+
+.footer .name {
+  display: inline-block;
+  padding-inline: 15%;
+}
+
+.footer hr {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.container {
+  position: relative;
+  padding-right: 25px;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.container .card .imgBox {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBox {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 500px;
+  background: #252D30;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFCD30;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: 'BIKE';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+
+}
+
+.container .card .contentBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBox {
+  height: 315px;
+}
+
+.container .card .contentBox h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding-bottom: 1px;
+  font-style: italic;
+}
+
+.container .card .contentBox h3{
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #fff;
+  padding-top: 0px;
+  font-style: italic;
+}
+
+.container .card .contentBox .size,
+.container .card .contentBox .color{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  transition: 0.5s;
+}
+
+.container .card .contentBox .size h3,
+.container .card .contentBox .color h3{
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  padding 0px 15px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBox .size h3 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.45s;
+  transform: translateY(0px);
+}
+
+.container .card:hover .contentBox .color h3 {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.65s;
+  transform: translateY(0px);
+}
+
+.container .card .contentBox .size span{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  display: inline-block;
+  color: black;
+  background: #fff;
+  margin: 10px 5px;
+  transition: 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBox .size span {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.45s;
+  transform: translateY(0px);
+}
+
+
+.container .card .contentBox .size span:hover {
+  background: #FFCD30;
+  transition-delay: 0s;
+}
+
+.container .card .contentBox .color span {
+  width: 20px;
+  height: 20px;
+  background: #FFCD30;
+  border-radius: 50%;
+  margin: 10px 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBox .color span {
+  transform: translateY(0px);
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.65s;
+}
+
+.container .card .contentBox .color span:nth-child(2) {
+  background: #fff;
+}
+
+.container .card .contentBox .color span:nth-child(3) {
+  background: #000;
+}
+
+.container .card .contentBox .color span:nth-child(4) {
+  background: blue;
+}
+
+.container .card .contentBox a {
+  display: inline-block;
+  padding: 10px 5px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.container .card:hover .contentBox a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.85s;
+}
+
+
+
+

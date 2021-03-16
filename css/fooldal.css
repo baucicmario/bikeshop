@@ -145,11 +145,25 @@ h1{
 .footer {
   margin-left: 8%;
   margin-right: 8%;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 84%;
   background-color: #3E4750;
   color: white;
   text-align: center;
+}
+
+.footer h2 {
+  padding-top: 20px;
+}
+
+.footer .name {
+  display: inline-block;
+  padding-inline: 15%;
+}
+
+.footer hr {
+  margin-right: 4%;
+  margin-left: 4%;
 }
