@@ -146,6 +146,7 @@ h1{
   margin-left: 8%;
   margin-right: 8%;
   position: relative;
+  clear: both;
   left: 0;
   bottom: 0;
   width: 84%;
@@ -153,6 +154,7 @@ h1{
   color: white;
   text-align: center;
 }
+
 
 .footer h2 {
   padding-top: 20px;
@@ -170,7 +172,9 @@ h1{
 
 .container {
   position: relative;
-  padding-right: 25px;
+  padding: 25px;
+  display: inline-block;
+  float: left;
 }
 
 .container img {
@@ -182,7 +186,7 @@ h1{
 
 .container .card .imgBox {
   width: 100%;
-  height: 250px;
+  height: 200px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
