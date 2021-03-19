@@ -1,3 +1,13 @@
+.inputbox{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #252D30;
+  color: white;
+  text-align:center;
+}
+
 .loginpage{
   margin: auto;
   margin-top: 5rem;
@@ -8,13 +18,4 @@
   border-radius: 30px;
   padding: 50px;
 }
-  
-.inputbox{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  background-color: #252D30;
-  color: white;
-  text-align:center;
-}
+

@@ -7,32 +7,29 @@
     <link href="../css/headerfooter.css" rel="stylesheet">
 </head>
 <body>
-    <header >
-        <table >
+    <header>
+        <table>
             <tr>
-                <th style="text-align: left;"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></th>
+                <th style="text-align: left;"><a href="fooldal.html"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></a></th>
                 <th style="text-align: center;"></thstyle> <h1>BIKESHOP</h1></th>
-                <th style="text-align: right;">  <button onclick="window.location.href='kosar.html'"class="headerbutton">Kosár</button>
-                    <button class="headerbutton" onclick="window.location.href='kosar.html'">Fiók</button></th>
+                <th style="text-align: right;">  <button onclick="window.location.href='../html/kosar.html'" class="headerbutton">Kosár</button>
+                    <button onclick="window.location.href='../html/belepes.html'" class="headerbutton">Fiók</button></th>
             </tr>
         </table>
-     </header>
-     <div class="navbar">
-        <div class="dropdown">
-          <button class="dropbtn">Menu 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="fooldal.html">Fooldal</a>
-            <a href="belepes.html">Belepes</a>
-            <a href="ferfi.html">Férfi biciklik</a>
-            <a href="no.html">Női biciklik</a>
-            <a href="gyerek.html">Gyerek biciklik</a>
-        <a href="regisztracio.html">Regisztracio</a>
-          </div>
-        </div> 
-      </div>
-
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Menu
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="fooldal.html">Főoldal</a>
+                    <a href="ferfi.html">Férfi kerékpár</a>
+                    <a href="no.html">Női kerékpár</a>
+                    <a href="gyerek.html">Gyerek kerékpár</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
@@ -54,7 +51,7 @@
                             <th style="text-align: left; padding-left: 10px;color: #FFCD30;">
                                 <article>
                                     <div>
-                                        <h1 style="color: #FFCD30;" class="promop">Akció minden KTM mountainbikera!</h1>
+                                        <h1 style="font-size: 42px; color: #FFCD30;" class="promop">Akció minden KTM mountainbikera!</h1>
                                         <section style="text-align: center;">
                                             <p>AKÁR 150000 Ft ért</p>
                                         </section>
@@ -93,11 +90,21 @@
             </tr>
           </table>
     </main>
-    <footer>
-        <div class="footer">
-            <p>Lábrészbe való adatok</p>
+    <footer class="footer">
+        <div>
+            <h2>Elérhetőség</h2>
+            <hr>
+            <div class="name">
+                <h3>Baucic Márió</h3>
+                <h4>baucicmario2.6@gmail.com</h4>
+            </div>
+            <div class="name">
+                <h3>Vadi Zsolt</h3>
+                <h4>vadizsolt@gmail.com</h4>
+            </div>
         </div>
     </footer>
+
 
 </body>
 </html>
