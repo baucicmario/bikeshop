@@ -1,0 +1,34 @@
+.cartcontainer {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    display: inline-block;
+    background: #252D30;
+    margin: 25px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    right: 8%;
+}
+
+#buy {
+    position: absolute;
+    top: 380px;
+    right: 125px;
+}
+
+.cartcontainer h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.cartcontainer h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.price {
+    text-align: center;
+    padding-top: 75px;
+}
+

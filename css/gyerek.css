@@ -6,7 +6,6 @@
   background-color: #3E4750;
   border-radius: 30px;
   padding: 50px;
-  text-align: center;"
   
 }
 
@@ -22,6 +21,7 @@
   -ms-user-select: none;
   user-select: none;
   color: white;
+
 }
 
 
@@ -79,6 +79,7 @@
   transform: rotate(45deg);
 }
 
-ul{
+.logpage ul{
   color: white;
+  list-style-type: none;
 }

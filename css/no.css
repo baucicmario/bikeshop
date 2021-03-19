@@ -6,7 +6,7 @@
   background-color: #3E4750;
   border-radius: 30px;
   padding: 50px;
-  text-align: center;"
+
   
 }
 
@@ -79,6 +79,7 @@
   transform: rotate(45deg);
 }
 
-ul{
+.logpage ul{
   color: white;
+  list-style-type: none;
 }

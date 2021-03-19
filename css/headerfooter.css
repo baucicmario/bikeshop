@@ -23,13 +23,11 @@ body {
   }
   
   header {
-   
     background-color: #3E4750;
-  
+    z-index: 10000000;
     justify-content: space-between;
     flex-direction: column;
     display: flex;
-  
   }
   
   h1{
@@ -64,7 +62,7 @@ body {
   
   
   .navbar {
-    
+
     overflow: hidden;
     background-color: #3E4750;
     
@@ -132,7 +130,7 @@ body {
   
   
   .footer {
-
+    clear: both;
     position: relative;
     left: 0;
     bottom: 0;
@@ -155,3 +153,12 @@ body {
     margin-right: 4%;
     margin-left: 4%;
   }
+  .footer a:link, .footer a:active, .footer a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    color: #FFCD30;
+  }
+
