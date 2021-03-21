@@ -30,7 +30,7 @@ body {
     display: flex;
   }
   
-  h1{
+  header a{
     font-size: 72px;
     color: #FFCD30;
     margin: auto;

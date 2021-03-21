@@ -1,12 +1,19 @@
 .logpage{
   margin: auto;
-  width: 100%;
+  width: 93%;
   height: 80%;
   text-align:left;
   vertical-align: top;
   background-color: #3E4750;
   border-radius: 30px;
   padding: 50px;
+}
+
+#logpage{
+  vertical-align: top;
+  height: 80%;
+  clear: both;
+  display: inline-block;
 }
 
 .container2 {
@@ -81,6 +88,7 @@
 .logpage ul{
   color: white;
   list-style-type: none;
+  width: 210px;
 }
 
 
