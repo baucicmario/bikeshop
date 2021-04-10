@@ -1,0 +1,104 @@
+<?php?>
+    <!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerékpár webshop</title>
+    <link href="../css/fooldal.css" rel="stylesheet">
+    <link href="../css/headerfooter.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <th style="text-align: left;"><a href="#"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></a></th>
+                <th style="text-align: center;"><a>BIKESHOP</a></th>
+                <th style="text-align: right;">  <button onclick="window.location.href='../php/kosar.php'" class="headerbutton">Kosár</button>
+                    <button onclick="window.location.href='../php/belepes.php'" class="headerbutton">Fiók</button></th>
+            </tr>
+        </table>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Menu
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Főoldal</a>
+                    <a href="ferfi.php">Férfi kerékpár</a>
+                    <a href="no.php">Női kerékpár</a>
+                    <a href="gyerek.php">Gyerek kerékpár</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <hr/>
+       <div>
+           <section>
+                    <table class="promotable">
+                        <tr>
+                            <th style="width: 20%; text-align: left;">
+                                <a href="https://www.ktm.com/en-hu.html">
+                                    <img class="promo" src="../img/PROMO.jpg" alt="kiemelt Termékre">
+                                </a>
+                            </th>
+                            <th style="text-align: left; padding-left: 10px;color: #FFCD30;">
+                                <div>
+                                    <div>
+                                        <a style="font-size: 42px; color: #FFCD30;" class="promop">Akció minden KTM mountainbikera!</a>
+                                        <div style="text-align: center;">
+                                            <p>AKÁR 150000 Ft ért</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+
+                        </tr>
+
+                    </table>
+           </section>
+       </div>
+        <hr/>
+
+        <table class="categorytable">
+            <tr>
+                <th class="graybox">
+                    <a href="ferfi.php">
+                        <img class="image" src="../img/man_on_bike.jpg" alt="kép">
+                    </a>
+                </th >
+                <th class="graybox">
+                    <a href="no.php">
+                        <img class="image" src="../img/woman_on_bike.jpg" alt="kép">
+                    </a>
+                </th>
+                <th class="graybox">
+                    <a href="gyerek.php">
+                    <img class="image" src="../img/kid_on_bike.jpg" alt="kép">
+                </a></th>
+            </tr>
+            <tr style="background-color:#FFCD30;">
+              <td style="border-radius: 30px;">Férfi</td>
+              <td style="border-radius: 30px;">Női</td>
+              <td style="border-radius: 30px;">Gyerek</td>
+            </tr>
+          </table>
+    </main>
+    <footer class="footer">
+        <div>
+            <h2>Elérhetőség</h2>
+            <hr>
+            <div class="name">
+                <h3>Baucic Márió</h3>
+                <h4><a href="mailto:baucicmario2.6@gmail.com">baucicmario2.6@gmail.com</a></h4>
+            </div>
+            <div class="name">
+                <h3>Vadi Zsolt</h3>
+                <h4><a href="mailto:vadizsolt@gmail.com">vadizsolt@gmail.com</a></h4>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
