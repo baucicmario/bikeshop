@@ -1,1 +1,2 @@
 a:2:{s:4:"fnev";s:4:"elso";s:6:"jelszo";s:3:"123";}
+a:2:{s:4:"fnev";s:7:"masodik";s:6:"jelszo";s:3:"321";}

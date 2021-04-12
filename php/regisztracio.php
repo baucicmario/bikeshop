@@ -1,4 +1,6 @@
-<?php?>
+<?php
+    session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="hu">
@@ -10,14 +12,9 @@
 </head>
 <body>
 <header>
-    <table>
-        <tr>
-            <th style="text-align: left;"><a href="fooldal.html"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></a></th>
-            <th style="text-align: center;"><a>BIKESHOP</a></th>
-            <th style="text-align: right;">  <button onclick="window.location.href='../html/kosar.html'" class="headerbutton">Kosár</button>
-                <button onclick="window.location.href='../html/belepes.html'" class="headerbutton">Fiók</button></th>
-        </tr>
-    </table>
+    <?php
+    include "../php/header.php";
+    ?>
     <div class="navbar">
         <div class="dropdown">
             <button class="dropbtn">Menu
@@ -45,19 +42,8 @@
         </form>
     </div>
 </main>
-<footer class="footer">
-    <div>
-        <h2>Elérhetőség</h2>
-        <hr>
-        <div class="name">
-            <h3>Baucic Márió</h3>
-            <h4><a href="mailto:baucicmario2.6@gmail.com">baucicmario2.6@gmail.com</a></h4>
-        </div>
-        <div class="name">
-            <h3>Vadi Zsolt</h3>
-            <h4><a href="mailto:vadizsolt@gmail.com">vadizsolt@gmail.com</a></h4>
-        </div>
-    </div>
-</footer>
+<?php
+include "../php/footer.php";
+?>
 </body>
 </html>

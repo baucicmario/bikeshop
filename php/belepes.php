@@ -1,5 +1,8 @@
 <?php
-   include "kozos.php";
+    session_start();
+    include "kozos.php";
+    $err = true;
+    $msg = "";
 
 ?>
 
@@ -13,14 +16,9 @@
 </head>
 <body>
 <header>
-    <table>
-        <tr>
-            <th style="text-align: left;"><a href="index.php"><img class="logo" src="../img/logo.jpg" alt="Az oldal címe/logója"/></a></th>
-            <th style="text-align: center;"><a>BIKESHOP</a></th>
-            <th style="text-align: right;"><button onclick="window.location.href='../php/kosar.php'" class="headerbutton">Kosár</button>
-                <button onclick="window.location.href='../php/belepes.php'" class="headerbutton">Fiók</button></th>
-        </tr>
-    </table>
+    <?php
+        include "../php/header.php";
+    ?>
     <div class="navbar">
         <div class="dropdown">
             <button class="dropbtn">Menu
@@ -37,6 +35,48 @@
 </header>
 
 <main>
+
+    <?php
+    $accounts = loaduser("../php/user.txt");
+
+    $user = "";
+    $password = "";
+    $success_login = false;
+
+    if (isset($_POST["login"])) {
+
+        $user = $_POST["fnev"];
+        $password = $_POST["jelszo"];
+        $GLOBALS["msg"] = "Hibás felhasználónév vagy jelszó!";
+        $user_data = array();
+
+
+        foreach ($accounts as $account) {
+            if ($user === $account["fnev"] && $password === $account["jelszo"]) {
+                $user_data["fnev"] = $account["fnev"];
+                $GLOBALS["err"] = false;
+                $success_login = true;
+                break;
+            }
+        }
+
+        if($success_login){
+            $_SESSION["user"] = $user_data;
+            header("Location: ../php/profil.php");
+        }
+
+    }
+
+    ?>
+    <style>
+        <?php include "../css/belepes.css"; ?>
+    </style>
+    <?php if($GLOBALS["err"] && isset($_POST["login"])):?>
+    <div class="alert">
+        <?php echo $GLOBALS["msg"] ?>
+    </div>
+    <?php endif; ?>
+
     <div class="loginpage">
         <form  action="belepes.php" method="post" enctype="multipart/form-data" autocomplete="off">
             <label><input class="inputbox" type="text" placeholder="Felhasználónév" name="fnev"></label><br>
@@ -44,46 +84,11 @@
             <label><input class="headerbutton" type="submit" name="login" value="Bejelentkezés"></label><br>
         </form>
 
-        <?php
-        $accounts = loaduser("../php/user.txt");
-
-        $user = "";
-        $password = "";
-
-        if (isset($_POST["login"])) {
-
-            $user = $_POST["fnev"];
-            $password = $_POST["jelszo"];
-
-            $msg = "sikertelen";
-
-            foreach ($accounts as $account) {
-                if ($user === $account["fnev"] && $password === $account["jelszo"]) {
-                    $msg = "sikeres";
-                    break;
-                }
-            }
-
-            echo $msg . "<br>";
-        }
-        ?>
-
         <button onclick="window.location.href='../php/regisztracio.php'" class="headerbutton">Regisztráció</button><br>
     </div>
 </main>
-<footer class="footer">
-    <div>
-        <h2>Elérhetőség</h2>
-        <hr>
-        <div class="name">
-            <h3>Baucic Márió</h3>
-            <h4><a href="mailto:baucicmario2.6@gmail.com">baucicmario2.6@gmail.com</a></h4>
-        </div>
-        <div class="name">
-            <h3>Vadi Zsolt</h3>
-            <h4><a href="mailto:vadizsolt@gmail.com">vadizsolt@gmail.com</a></h4>
-        </div>
-    </div>
-</footer>
+<?php
+    include "../php/footer.php";
+?>
 </body>
 </html>
