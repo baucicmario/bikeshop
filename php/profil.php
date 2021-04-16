@@ -8,6 +8,7 @@
 <header>
     <?php
     include "../php/header.php";
+    include "kozos.php";
     ?>
     <style>
         <?php include "../css/headerfooter.css"; ?>
@@ -29,7 +30,10 @@
 
 <?php
     echo $_SESSION["user"]["userName"];
+
+
 ?>
+    <img src="<?php echo $_SESSION["user"]["profilPicture"];?>">
     <button onclick="window.location.href='../php/kijelentkezes.php'" class="headerbutton">Kijelentkezés</button>
 
 <?php

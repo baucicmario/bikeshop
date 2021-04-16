@@ -61,11 +61,12 @@
                 <label><input class="inputbox" type="password" name="jelszo2" placeholder="Jelszó újra"></label><br>
                 <div>Hali</div>
             </div>
+            <label><input hidden type="hidden" name="profilPicture" value="default.jpg"></label>
             <label><input class="headerbutton" type="submit" name="regisztracio" value="Regisztráció"></label>
         </form>
     </div>
     <?php
-        $fiokok = loaduser("../php/user.txt");
+        $fiokok = loaduser("../user/user.txt");
 
         $errors = [];
         $email = "";
@@ -74,6 +75,7 @@
         $lastName = "";
         $jelszo = "";
         $jelszo2 = "";
+        $profilPicture = "";
 
         if(isset($_POST["regisztracio"])) {
             $email = $_POST["email"];
@@ -82,6 +84,7 @@
             $lastName = $_POST["lastName"];
             $jelszo = $_POST["jelszo"];
             $jelszo2 = $_POST["jelszo2"];
+            $profilPicture = "../user/" . $_POST["profilPicture"];
 
             foreach ($fiokok as $fiok) {
                 if($fiok["email"] === $email) {
@@ -116,10 +119,11 @@
                     "userName"=>$userName,
                     "firstName"=>$firstName,
                     "lastName"=>$lastName,
-                    "jelszo"=>$jelszo
+                    "jelszo"=>$jelszo,
+                    "profilPicture"=>$profilPicture
                 ];
 
-                saveuser("../php/user.txt", $data);
+                saveuser("../user/user.txt", $data);
             } else {
                 foreach ($errors as $err) {
                     echo $err . "<br>";

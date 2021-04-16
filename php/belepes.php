@@ -40,7 +40,7 @@
 <main>
 
     <?php
-    $accounts = loaduser("../php/user.txt");
+    $accounts = loaduser("../user/user.txt");
 
     $user = "";
     $password = "";
@@ -57,6 +57,7 @@
         foreach ($accounts as $account) {
             if ($user === $account["userName"] && $password === $account["jelszo"]) {
                 $user_data["userName"] = $account["userName"];
+                $user_data["profilPicture"] = $account["profilPicture"];
                 $GLOBALS["err"] = false;
                 $success_login = true;
                 break;
