@@ -35,7 +35,7 @@
 <main>
     <div>
         <div>
-            <section class="container">
+            <section class="container" style="padding-left: 180px">
                 <article class="card">
                     <div class="imgBox">
                         <img src="../img/gyerek/futo1.png" alt="termék képe">
