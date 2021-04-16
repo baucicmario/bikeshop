@@ -1,2 +1,1 @@
-a:2:{s:4:"fnev";s:4:"elso";s:6:"jelszo";s:3:"123";}
-a:2:{s:4:"fnev";s:7:"masodik";s:6:"jelszo";s:3:"321";}
+a:5:{s:5:"email";s:19:"vadizsolt@gmail.com";s:8:"userName";s:9:"VadiZsolt";s:9:"firstName";s:4:"Vadi";s:8:"lastName";s:5:"Zsolt";s:6:"jelszo";s:8:"123Zsolt";}

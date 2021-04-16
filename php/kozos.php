@@ -13,8 +13,12 @@
         return $user;
     }
 
-    function saveuser () {
+    function saveuser ($fileName, $user) {
+        $file = fopen($fileName,"a");
 
+        fwrite($file, serialize($user)."\n");
+
+        fclose($file);
     }
 
 ?>

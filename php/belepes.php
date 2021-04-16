@@ -1,6 +1,9 @@
 <?php
     session_start();
     include "kozos.php";
+    if(isset($_SESSION["user"]) && !empty($_SESSION["user"])) {
+        header("Location: ../php/profil.php");
+    }
     $err = true;
     $msg = "";
 
@@ -45,15 +48,15 @@
 
     if (isset($_POST["login"])) {
 
-        $user = $_POST["fnev"];
+        $user = $_POST["userName"];
         $password = $_POST["jelszo"];
         $GLOBALS["msg"] = "Hibás felhasználónév vagy jelszó!";
         $user_data = array();
 
 
         foreach ($accounts as $account) {
-            if ($user === $account["fnev"] && $password === $account["jelszo"]) {
-                $user_data["fnev"] = $account["fnev"];
+            if ($user === $account["userName"] && $password === $account["jelszo"]) {
+                $user_data["userName"] = $account["userName"];
                 $GLOBALS["err"] = false;
                 $success_login = true;
                 break;
@@ -79,7 +82,7 @@
 
     <div class="loginpage">
         <form  action="belepes.php" method="post" enctype="multipart/form-data" autocomplete="off">
-            <label><input class="inputbox" type="text" placeholder="Felhasználónév" name="fnev"></label><br>
+            <label><input class="inputbox" type="text" placeholder="Felhasználónév" name="userName"></label><br>
             <label><input class="inputbox" type="password" placeholder="Jelszó" name="jelszo"></label><br>
             <label><input class="headerbutton" type="submit" name="login" value="Bejelentkezés"></label><br>
         </form>

@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION["user"])) {
+    if(!isset($_SESSION["user"]) || empty($_SESSION["user"])) {
         header("Location: ../php/belepes.php");
     }
 ?>
@@ -9,6 +9,9 @@
     <?php
     include "../php/header.php";
     ?>
+    <style>
+        <?php include "../css/headerfooter.css"; ?>
+    </style>
     <div class="navbar">
         <div class="dropdown">
             <button class="dropbtn">Menu
@@ -25,8 +28,9 @@
 </header>
 
 <?php
-    echo $_SESSION["user"]["fnev"];
+    echo $_SESSION["user"]["userName"];
 ?>
+    <button onclick="window.location.href='../php/kijelentkezes.php'" class="headerbutton">Kijelentkezés</button>
 
 <?php
 include "../php/footer.php";
