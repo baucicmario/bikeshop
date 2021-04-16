@@ -18,3 +18,9 @@
   color: white;
   text-align:center;
 }
+
+.alert {
+  text-align: left;
+  color: red;
+}
+
