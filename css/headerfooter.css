@@ -102,6 +102,16 @@ body {
     border-radius: 12px;
   }
   
+
+  .dropdown-current {
+    background-color: red;
+    
+    border-radius: 12px;
+  }
+  
+
+
+
   .dropdown-content {
     display: none;
     position: absolute;
