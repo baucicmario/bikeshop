@@ -14,26 +14,7 @@
     <style>
         <?php include "../css/headerfooter.css"; ?>
     </style>
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">Menu
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a style="<?= ($activePage == 'index') ? 'background-color: #FFCD30; border-radius: 12px':''; ?>" href="index.php">Főoldal</a>
-                <a style="<?= ($activePage == 'ferfi') ? 'background-color: #FFCD30; border-radius: 12px':''; ?>" href="ferfi.php">Férfi kerékpár</a>
-                <a style="<?= ($activePage == 'no') ? 'background-color: #FFCD30; border-radius: 12px':''; ?>" href="no.php">Női kerékpár</a>
-                <a style="<?= ($activePage == 'gyerek') ? 'background-color: #FFCD30; border-radius: 12px':''; ?>" href="gyerek.php">Gyerek kerékpár</a>
-           
-            </div>
-        </div>
-    </div>
 </header>
-
-
-
-
-
 <?php
 
     $felh= $_SESSION["user"]["userName"];
@@ -53,13 +34,11 @@
       
       if(empty($errors)==true) {
          move_uploaded_file($file_tmp,"../user/".$file_name);
+          edituser("../user/user.txt", $felh,"profilPicture",$file_name);
          echo "Success";
       }else{
          print_r($errors);
       }
-
-      
-   edituser("../user/user.txt", $felh,"profilPicture",$file_name);
    }
 
 ?>
