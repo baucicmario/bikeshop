@@ -1,0 +1,10 @@
+a:6:{s:3:"kep";s:21:"../img/ferfi/mtb1.png";s:3:"nev";s:24:"ROCKRIDER MTB KERÉKPÁR";s:2:"ar";s:9:"99 999 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"4";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:21:"../img/ferfi/mtb2.png";s:3:"nev";s:26:"ROCKRIDER MTB E.KERÉKPÁR";s:2:"ar";s:10:"630 000 Ft";s:5:"meret";a:1:{i:0;s:2:"27";}s:4:"szin";s:1:"4";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:24:"../img/ferfi/orszag1.png";s:3:"nev";s:29:"TRIBAN ORSZÁGÚTI KERÉKPÁR";s:2:"ar";s:10:"229 990 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"4";s:5:"tipus";s:6:"orszag";}
+a:6:{s:3:"kep";s:24:"../img/ferfi/orszag2.png";s:3:"nev";s:29:"TRIBAN ORSZÁGÚTI KERÉKPÁR";s:2:"ar";s:10:"229 990 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"4";s:5:"tipus";s:6:"orszag";}
+a:6:{s:3:"kep";s:24:"../img/ferfi/orszag3.png";s:3:"nev";s:32:"VAN RYSEL ORSZÁGÚTI KERÉKPÁR";s:2:"ar";s:10:"720 990 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"4";s:5:"tipus";s:6:"orszag";}
+a:6:{s:3:"kep";s:25:"../img/ferfi/crusier1.png";s:3:"nev";s:14:"CSEPEL CRUSIER";s:2:"ar";s:9:"78 930 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"cru";}
+a:6:{s:3:"kep";s:25:"../img/ferfi/crusier2.png";s:3:"nev";s:14:"CSEPEL CRUSIER";s:2:"ar";s:9:"89 780 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"4";s:5:"tipus";s:3:"cru";}
+a:6:{s:3:"kep";s:23:"../img/ferfi/varos1.png";s:3:"nev";s:18:"ELOPS E.KERÉKPÁR";s:2:"ar";s:10:"250 000 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"4";s:5:"tipus";s:5:"varos";}
+a:6:{s:3:"kep";s:23:"../img/ferfi/varos2.png";s:3:"nev";s:24:"ELOPS VÁROSI KERÉKPÁR";s:2:"ar";s:9:"78 990 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"3";s:5:"tipus";s:5:"varos";}
+a:6:{s:3:"kep";s:23:"../img/ferfi/varos3.png";s:3:"nev";s:24:"ELOPS VÁROSI KERÉKPÁR";s:2:"ar";s:9:"89 750 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"4";s:5:"tipus";s:5:"varos";}

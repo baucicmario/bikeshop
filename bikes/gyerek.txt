@@ -1,0 +1,10 @@
+a:6:{s:3:"kep";s:23:"../img/gyerek/futo1.png";s:3:"nev";s:21:"BTWIN FUTÓKERÉKPÁR";s:2:"ar";s:9:"19 290 Ft";s:5:"meret";a:1:{i:0;s:2:"10";}s:4:"szin";s:1:"3";s:5:"tipus";s:4:"futo";}
+a:6:{s:3:"kep";s:23:"../img/gyerek/futo2.png";s:3:"nev";s:21:"BTWIN FUTÓKERÉKPÁR";s:2:"ar";s:9:"19 290 Ft";s:5:"meret";a:1:{i:0;s:2:"10";}s:4:"szin";s:1:"3";s:5:"tipus";s:4:"futo";}
+a:6:{s:3:"kep";s:23:"../img/gyerek/futo3.png";s:3:"nev";s:21:"BTWIN FUTÓKERÉKPÁR";s:2:"ar";s:9:"19 290 Ft";s:5:"meret";a:1:{i:0;s:2:"10";}s:4:"szin";s:1:"3";s:5:"tipus";s:4:"futo";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/mtb1.png";s:3:"nev";s:20:"BTWIN MTB KERÉKPÁR";s:2:"ar";s:9:"49 990 Ft";s:5:"meret";a:2:{i:0;s:2:"20";i:1;s:2:"24";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/mtb2.png";s:3:"nev";s:20:"BTWIN MTB KERÉKPÁR";s:2:"ar";s:9:"59 980 Ft";s:5:"meret";a:2:{i:0;s:2:"20";i:1;s:2:"24";}s:4:"szin";s:1:"4";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/mtb3.png";s:3:"nev";s:20:"BTWIN MTB KERÉKPÁR";s:2:"ar";s:9:"59 980 Ft";s:5:"meret";a:2:{i:0;s:2:"20";i:1;s:2:"24";}s:4:"szin";s:1:"4";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/bmx1.png";s:3:"nev";s:20:"BTWIN BMX KERÉKPÁR";s:2:"ar";s:9:"59 690 Ft";s:5:"meret";a:1:{i:0;s:2:"20";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"bmx";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/bmx2.png";s:3:"nev";s:20:"BTWIN BMX KERÉKPÁR";s:2:"ar";s:9:"69 990 Ft";s:5:"meret";a:1:{i:0;s:2:"20";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"bmx";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/tri1.png";s:3:"nev";s:14:"SMOBY TRICIKRI";s:2:"ar";s:9:"10 990 Ft";s:5:"meret";a:1:{i:0;s:2:"10";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"tri";}
+a:6:{s:3:"kep";s:22:"../img/gyerek/tri3.png";s:3:"nev";s:14:"SMOBY TRICIKRI";s:2:"ar";s:9:"10 990 Ft";s:5:"meret";a:1:{i:0;s:2:"10";}s:4:"szin";s:1:"3";s:5:"tipus";s:3:"tri";}

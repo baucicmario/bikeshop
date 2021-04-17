@@ -1,0 +1,11 @@
+a:6:{s:3:"kep";s:22:"../img/no/crusier1.png";s:3:"nev";s:14:"CSEPEL CRUSIER";s:2:"ar";s:9:"89 390 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:3:"cru";}
+a:6:{s:3:"kep";s:22:"../img/no/crusier2.png";s:3:"nev";s:14:"CSEPEL CRUSIER";s:2:"ar";s:9:"74 250 Ft";s:5:"meret";a:1:{i:0;s:2:"26";}s:4:"szin";s:1:"5";s:5:"tipus";s:3:"cru";}
+a:6:{s:3:"kep";s:18:"../img/no/mtb1.png";s:3:"nev";s:24:"ROCKRIDER MTB KERÉKPÁR";s:2:"ar";s:10:"104 780 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:18:"../img/no/mtb2.png";s:3:"nev";s:24:"ROCKRIDER MTB KERÉKPÁR";s:2:"ar";s:10:"104 780 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:18:"../img/no/mtb3.png";s:3:"nev";s:24:"ROCKRIDER MTB KERÉKPÁR";s:2:"ar";s:10:"104 780 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:3:"mtb";}
+a:6:{s:3:"kep";s:19:"../img/no/tura1.png";s:3:"nev";s:26:"RIVERSIDE TÚRA KERÉKPÁR";s:2:"ar";s:9:"54 450 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:4:"tura";}
+a:6:{s:3:"kep";s:19:"../img/no/tura2.png";s:3:"nev";s:26:"RIVERSIDE TÚRA KERÉKPÁR";s:2:"ar";s:9:"87 390 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"4";s:5:"tipus";s:4:"tura";}
+a:6:{s:3:"kep";s:19:"../img/no/tura3.png";s:3:"nev";s:26:"RIVERSIDE TÚRA KERÉKPÁR";s:2:"ar";s:9:"99 980 Ft";s:5:"meret";a:2:{i:0;s:2:"26";i:1;s:2:"27";}s:4:"szin";s:1:"5";s:5:"tipus";s:4:"tura";}
+a:6:{s:3:"kep";s:21:"../img/no/varosi1.png";s:3:"nev";s:18:"ELOPS E.KERÉKPÁR";s:2:"ar";s:10:"399 000 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"3";s:5:"tipus";s:5:"varos";}
+a:6:{s:3:"kep";s:21:"../img/no/varosi2.png";s:3:"nev";s:24:"ELOPS VÁROSI KERÉKPÁR";s:2:"ar";s:9:"79 990 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"5";s:5:"tipus";s:5:"varos";}
+a:6:{s:3:"kep";s:21:"../img/no/varosi3.png";s:3:"nev";s:24:"ELOPS VÁROSI KERÉKPÁR";s:2:"ar";s:9:"87 350 Ft";s:5:"meret";a:2:{i:0;s:2:"27";i:1;s:2:"29";}s:4:"szin";s:1:"5";s:5:"tipus";s:5:"varos";}
