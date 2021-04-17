@@ -53,7 +53,6 @@
     $jelszo = "";
     $jelszo2 = "";
     $profilPicture = "";
-
     if(isset($_POST["regisztracio"])) {
         $email = $_POST["email"];
         $userName = $_POST["userName"];
