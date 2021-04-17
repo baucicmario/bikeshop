@@ -4,6 +4,7 @@
         header("Location: ../php/belepes.php");
     }
     $_SESSION["currentpage"] = "profil.php";
+    $activePage = basename($_SERVER['PHP_SELF'], ".php");
 ?>
 
 <header>
@@ -49,7 +50,7 @@
         <div style="margin: auto;border-radius: 72px;background-color: #252D30; width:40%;padding:30px;">
             <img style="max-width:200px;max-height:200px;border-radius: 12px;" src="../user/<?php echo $_SESSION["user"]["profilPicture"];?>">
             <h2 style="color: white;">Profilkép csere</h2>
-            <form style="color: white;border-radius: 12px;background-color: #FFCD30; padding: 15 0;"action = "" method = "POST" enctype = "multipart/form-data">
+            <form style="color: white;border-radius: 12px;background-color: #FFCD30; padding: 15px 0;"action = "" method = "POST" enctype = "multipart/form-data">
                 <input type = "file" name = "image" />
                 <input type = "submit"/>
             </form>

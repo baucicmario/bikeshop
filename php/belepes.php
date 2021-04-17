@@ -4,6 +4,7 @@
     if(isset($_SESSION["user"]) && !empty($_SESSION["user"])) {
         header("Location: ../php/profil.php");
     }
+    $activePage = basename($_SERVER['PHP_SELF'], ".php");
     $err = true;
     $msg = "";
 
