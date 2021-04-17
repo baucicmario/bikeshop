@@ -51,12 +51,34 @@ body {
     width: 15em;
     color: #3E4750;
     border: 3px solid #FFCD30;
-   
+  }
+
+  .szuro{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: #FFCD30;
+    width: 10em;
+    color: #3E4750;
+    border: 3px solid #FFCD30;
   }
   .headerbutton:hover{
     background-color: gray;
     color: white;
     
+    border: 3px solid gray;
+  }
+
+  .szuro:hover {
+    background-color: gray;
+    color: white;
+
     border: 3px solid gray;
   }
   
@@ -171,4 +193,5 @@ body {
   .footer a:hover {
     color: #FFCD30;
   }
+
 
